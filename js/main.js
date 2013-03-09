@@ -1,5 +1,6 @@
 $(function(){
   $('section:not([data-initial])').hide();
+  $('aside').localScroll();
 
   $('.header-container a').click(function(e){
     var $link = $(this),
