@@ -20,7 +20,8 @@ body {
 .footer-container footer { height: 40px; }
 
 section {
-  display: block;
+  display: block; }
+article {
   padding: 30px 10% 60px; }
 
 section#cover {
@@ -110,6 +111,7 @@ blockquote {
 
   .narrow-wrapper {
     width: 670px; }
+
   .header-container nav {
     height: 35px; }
   .header-container nav li {

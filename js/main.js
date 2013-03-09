@@ -5,8 +5,9 @@ $(function(){
     var $link = $(this),
         href  = $link.attr('href');
 
-    $('section').hide();
-    $(href).show();
+    $('section:visible').fadeOut(300, function(){
+      $(href).fadeIn(300);
+    });
 
     $('.header-container nav li').removeClass('active');
     $link.parent().addClass('active');
