@@ -1,0 +1,138 @@
+body {
+  background: #fff;
+  font: 16px/26px 'Poiret One', Helvetica, Arial, Verdana;
+}
+
+/* Layout */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.narrow-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-container footer { height: 40px; }
+
+section {
+  width: 100%;
+  padding: 30px 0; }
+
+section#cover {
+  padding: 0;
+  height: 300px;
+  background: url('../img/cover.jpg') no-repeat center 25%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section#cover img { display: none; }
+
+.header-container .title a {
+  display: block;
+  background: transparent url(../img/logo.png) center center;
+  width: 237px;
+  height: 120px;
+  margin: 35px auto 45px;
+}
+
+.header-container nav,
+.footer-container footer {
+  background: #4F4D4A; }
+
+
+.header-container {
+  background: #fff;
+  border: 0;
+  box-shadow: 0; }
+
+  .header-container nav {
+    width: 100%;
+    background: #4F4D4A;
+    line-height: 35px; }
+
+  .header-container nav ul {
+    padding: 0; }
+  .header-container nav li {
+    color: #fff; }
+  .header-container nav a {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: block; }
+  .header-container nav li:hover a,
+  .header-container nav li.active a {
+    color: #4F4D4A;
+    background-color: #f8b7c9; }
+
+
+@media only screen and (min-width: 480px) {
+  nav li:first-child a { margin-left: 0; }
+  nav li:last-child  a { margin-right: 0; }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding-bottom: 35px;
+    position: relative; }
+  .header-container nav {
+    position: absolute; }
+
+  .narrow-wrapper {
+    width: 670px; }
+  .header-container nav {
+    height: 35px; }
+  .header-container nav li {
+    width: 25%;
+    float: left; }
+
+  .header-container nav li.active a {
+    line-height: 50px;
+    height: 50px; }
+  .header-container nav li.active a:before,
+  .header-container nav li.active a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    line-height: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid; }
+
+  .header-container nav li.active a:before {
+    left: -15px;
+    border-width: 0 15px 15px 0;
+    border-color: transparent #bc8093 transparent transparent; }
+
+  .header-container nav li.active a:after {
+    right: -15px;
+    border-width: 15px 15px 0 0;
+    border-color: #bc8093 transparent transparent transparent; }
+
+  section#cover {
+    height: 484px; }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .wrapper {
+    width: 940px; /* 960px - 2 x 10px for margins */
+    margin: 0 auto;
+  }
+}
+
+/* Helpers */
+.center {
+  text-align: center;
+}
